@@ -1,4 +1,4 @@
-import { Header } from '@/components/header/Header'
+import { Header } from '@/components/dashboard-layout/header/Header'
 
 export default function Home() {
   return (

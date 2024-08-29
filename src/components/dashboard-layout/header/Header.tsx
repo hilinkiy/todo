@@ -1,5 +1,5 @@
 import { StickyNote } from 'lucide-react'
-import styles from './Header.module.scss'
+import { GlobalLoader } from './GlobalLoader'
 import {
 	Select,
 	SelectContent,
@@ -8,18 +8,19 @@ import {
 	SelectValue,
 } from "@/components/ui/select"
 import { useTranslations } from 'next-intl'
+import { ProfileIcon } from './profile/ProfileIcon'
 
 export function Header() {
-	const t = useTranslations("header")
+	const t = useTranslations('header')
 
 	return (
-		<nav className={styles.nav}>
-			<div className='container flex items-center justify-between'>
+		<nav className='border-border border-b-2 w-full px-20 py-5'>
+			<div className='flex items-center justify-between'>
 				<StickyNote className='text-white' size={40} />
-				<h1 className={styles.title}>
+				<h1 className='text-white text-[40px]'>
 					{t("notes")}
 				</h1>
-				<div>
+				<div className='flex items-center gap-5'>
 					<Select>
 						<SelectTrigger className="w-[130px] bg-transparent border-borderw text-white border-2 outline-none" >
 							<SelectValue placeholder='Dark' />
@@ -30,8 +31,10 @@ export function Header() {
 							<SelectItem value="system">System</SelectItem>
 						</SelectContent>
 					</Select>
+					<ProfileIcon />
 				</div>
 			</div>
+			<GlobalLoader />
 		</nav>
 	)
 }
