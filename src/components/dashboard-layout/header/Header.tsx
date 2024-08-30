@@ -1,14 +1,9 @@
 import { StickyNote } from 'lucide-react'
 import { GlobalLoader } from './GlobalLoader'
-import {
-	Select,
-	SelectContent,
-	SelectItem,
-	SelectTrigger,
-	SelectValue,
-} from "@/components/ui/select"
 import { useTranslations } from 'next-intl'
-import { ProfileIcon } from './profile/ProfileIcon'
+import LanguageSwitcher from '@/components/shared/LanguageSwitcher'
+import { LogoutButton } from '../Logout'
+import { GoToSettings } from '../GoToSettings'
 
 export function Header() {
 	const t = useTranslations('header')
@@ -21,17 +16,9 @@ export function Header() {
 					{t("notes")}
 				</h1>
 				<div className='flex items-center gap-5'>
-					<Select>
-						<SelectTrigger className="w-[130px] bg-transparent border-borderw text-white border-2 outline-none" >
-							<SelectValue placeholder='Dark' />
-						</SelectTrigger>
-						<SelectContent>
-							<SelectItem value="dark">Dark</SelectItem>
-							<SelectItem value="light">Light</SelectItem>
-							<SelectItem value="system">System</SelectItem>
-						</SelectContent>
-					</Select>
-					<ProfileIcon />
+					<LanguageSwitcher />
+					<GoToSettings />
+					<LogoutButton />
 				</div>
 			</div>
 			<GlobalLoader />

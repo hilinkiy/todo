@@ -1,0 +1,7 @@
+.login {
+	@apply text-white bg-transparent border-2 border-white py-6 mt-2 mb-5;
+	
+	&::placeholder {
+		@apply text-white/50;
+	}
+}
