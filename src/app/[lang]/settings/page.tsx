@@ -1,7 +1,9 @@
-export default function Home() {
+import { Settings } from './Settings'
+
+export default function SettingsPage() {
   return (
     <div>
-      Settings
+      <Settings />
     </div>
   )
 }

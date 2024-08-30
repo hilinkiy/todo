@@ -22,4 +22,4 @@ export interface IAuthResponse {
   user: IUser
 }
 
-export type TypeUserForm = Omit<IUser, 'id'> & { password?: string }
+export type TypeUserForm = Omit<IUser, 'id'> & { password?: string | undefined }

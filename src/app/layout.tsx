@@ -15,7 +15,8 @@ const zen = Noto_Sans({
 
 export const metadata: Metadata = {
 	title: 'TODO',
-	description: 'Best one for planning from RED GROUP [htmllessons.ru]'
+	description: 'Best one for planning from RED GROUP [htmllessons.ru]',
+	icons: '/note.svg'
 }
 
 export default function RootLayout({
