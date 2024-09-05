@@ -1,5 +1,32 @@
 {
-	"header": {
-		"notes": "Eslatmalar"
+	"main": {
+		"notes": "Sizning eslatmalaringiz",
+		"grid": "To'r",
+		"list": "Ro'yxat",
+		"change": "O'zgartitish",
+		"delete": "O'chirish",
+		"noDate": "Sana qo'yilmagan"
+	},
+	"modal": {
+		"title": "Sarlavha:",
+		"content": "Mazmuni:",
+		"titlePlaceholder": "Sarlavhani kiriting",
+		"contentPlaceholder": "Mazmunni kiriting",
+		"cancel": "Bekor qilish",
+		"add": "Qo'shish",
+		"change": "O'zgartitish",
+		"addNote": "Eslatma Qo'shish",
+		"changeNote": "Eslatmani o'zgartitish"
+	},
+	"settings": {
+		"name": "Ismi:",
+		"password": "Paroli:",
+		"namePlaceholder": "Ismni kiriting",
+		"passwordPlaceholder": "parolni kiriting",
+		"home": "Uyga qaytish",
+		"save": "Saqlsh",
+		"settings": "Sozlamalar",
+		"language": "Til:",
+		"emailPlaceholder": "Emailni kiriting"
 	}
 }

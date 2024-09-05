@@ -1,5 +1,35 @@
 {
-	"header": {
-		"notes": "Заметки"
+	"main": {
+		"notes": "Ваши заметки",
+		"grid": "Сетка",
+		"list": "Колонны",
+		"change": "Редактировать",
+		"delete": "Удалить",
+		"noDate": "Дата не указана"
+	},
+	"modal": {
+		"title": "Заголовок:",
+		"content": "Контент:",
+		"titlePlaceholder": "Введите заголовок",
+		"contentPlaceholder": "Введите контент",
+		"cancel": "Отменить",
+		"add": "Добавить",
+		"change": "Изменить",
+		"addNote": "Добавить заметку",
+		"changeNote": "Редактировать заметку"
+	},
+	"settings": {
+		"name": "Имя:",
+		"password": "Пароль:",
+		"namePlaceholder": "Введите имя",
+		"passwordPlaceholder": "Введите пароль",
+		"home": "Обратно домой",
+		"save": "Сохранить",
+		"settings": "Настройки",
+		"language": "Язык:",
+		"emailPlaceholder": "Введите email"
+	},
+	"login": {
+		"login": "Login"
 	}
 }

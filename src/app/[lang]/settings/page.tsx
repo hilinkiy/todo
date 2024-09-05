@@ -1,9 +1,15 @@
+import { NextIntlClientProvider } from 'next-intl'
 import { Settings } from './Settings'
+import { getMessages } from 'next-intl/server'
 
-export default function SettingsPage() {
+export default async function SettingsPage() {
+  const messages = await getMessages()
+
   return (
     <div>
-      <Settings />
+      <NextIntlClientProvider messages={messages}>
+        <Settings />
+      </NextIntlClientProvider>
     </div>
   )
 }

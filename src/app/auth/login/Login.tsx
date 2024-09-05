@@ -46,7 +46,7 @@ export function Login() {
 				className='w-1/4 m-auto'
 				onSubmit={handleSubmit(onSubmit)}
 			>
-				<Heading title='Login' />
+				<Heading title='Login'/>
 				<Label htmlFor="email" className='text-white text-md'>Email:</Label>
 				<Input
 					id='email'

@@ -13,8 +13,10 @@ import { useUpdateSettings } from './useUpdateSettings'
 import LanguageSwitcher from '@/components/shared/LanguageSwitcher'
 import { Profile } from '@/components/dashboard-layout/header/profile/Profile'
 import { Label } from '@/components/ui/label'
+import { useTranslations } from 'next-intl'
 
 export function Settings() {
+	const t = useTranslations('settings')
 	const router = useRouter()
 	const { pathname } = window.location
 	const currentLanguage = pathname.split('/')[1]
@@ -42,13 +44,13 @@ export function Settings() {
 				<Profile />
 				<Link href={`/${currentLanguage}`} className='flex flex-col items-center'>
 					<CornerUpLeft className='text-white' />
-					<span className='text-white'>Go back home</span>
+					<span className='text-white'>{t('home')}</span>
 				</Link>
 			</div>
 			<div className='border-border border-r-2' />
 			<div className='py-10 pl-10'>
 				<h1 className='text-2xl text-white'>
-					Settings
+					{t('settings')}
 				</h1>
 				<form
 					onSubmit={handleSubmit(onSubmit)}
@@ -59,7 +61,7 @@ export function Settings() {
 							<Label htmlFor="email" className='text-white text-md'>Email:</Label>
 							<Input
 								id='email'
-								placeholder='Enter email: '
+								placeholder={t('emailPlaceholder')}
 								type='email'
 								className={styles.input}
 								{...register('email', {
@@ -69,20 +71,20 @@ export function Settings() {
 						</div>
 
 						<div>
-							<Label htmlFor="name" className='text-white text-md'>Name:</Label>
+							<Label htmlFor="name" className='text-white text-md'>{t('name')}</Label>
 							<Input
 								id='name'
-								placeholder='Enter name: '
+								placeholder={t('namePlaceholder')}
 								{...register('name')}
 								className={styles.input}
 							/>
 						</div>
 
 						<div>
-							<Label htmlFor="password" className='text-white text-md'>Password:</Label>
+							<Label htmlFor="password" className='text-white text-md'>{t('password')}</Label>
 							<Input
 								id='password'
-								placeholder='Enter password: '
+								placeholder={t('passwordPlaceholder')}
 								type='password'
 								{...register('password')}
 								className={styles.input}
@@ -94,12 +96,12 @@ export function Settings() {
 						type='submit'
 						disabled={isPending}
 					>
-						Save
+						{t('save')}
 					</Button>
 				</form>
 
 				<div className='flex flex-col gap-3 text-2xl text-white'>
-					Language:
+					{t('language')}
 					<LanguageSwitcher />
 				</div>
 			</div>

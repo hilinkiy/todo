@@ -10,5 +10,10 @@ export const metadata: Metadata = {
 }
 
 export default function LoginPage() {
-	return <Login />
+
+	return (
+		<div>
+			<Login />
+		</div>
+	)
 }

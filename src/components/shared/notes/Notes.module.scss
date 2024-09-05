@@ -1,0 +1,43 @@
+.note {
+	@apply bg-white/20 rounded-xl p-4 cursor-pointer flex flex-col justify-between;
+}
+
+.buttons {
+	@apply flex items-center gap-8 justify-end mt-5;
+}
+
+.head {
+	@apply flex justify-between items-center mb-3;
+}
+
+.title {
+	@apply text-white text-2xl font-bold;
+}
+
+.date {
+	@apply text-white/80;
+}
+
+.content {
+	@apply text-white;
+}
+
+.delete {
+	@apply text-red-600 flex items-center gap-2 bg-transparent;
+}
+
+.edit {
+	@apply text-green-500 flex items-center gap-2 bg-transparent;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 15px;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 15px;
+}

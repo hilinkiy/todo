@@ -1,5 +1,35 @@
 {
-	"header": {
-		"notes": "Notes"
+	"main": {
+		"notes": "Your Notes",
+		"grid": "Grid",
+		"list": "List",
+		"change": "Change",
+		"delete": "Delete",
+		"noDate": "Date undefined"
+	},
+	"modal": {
+		"title": "Title:",
+		"content": "Content:",
+		"titlePlaceholder": "Enter title",
+		"contentPlaceholder": "Enter content",
+		"cancel": "Cancel",
+		"add": "Add",
+		"change": "Change",
+		"addNote": "Add note",
+		"changeNote": "Change note"
+	},
+	"settings": {
+		"name": "Name:",
+		"password": "Password:",
+		"namePlaceholder": "Enter name",
+		"passwordPlaceholder": "Enter password",
+		"home": "Go back home",
+		"save": "Save",
+		"settings": "Settings",
+		"language": "Language:",
+		"emailPlaceholder": "Enter email"
+	},
+	"login": {
+		"login": "Login"
 	}
 }
